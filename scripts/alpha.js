@@ -35,14 +35,17 @@ function handleKeyboardKeyUpEvent(event){
     }
     else{
         console.log('you missed. you lost a life');
-        // 1.get the curent live number
+        // 1.get the curent life number
         const currentLifeElement = document.getElementById('current-life');
         const currentLifeText = currentLifeElement.innerText;
         const currentLife = parseInt(currentLifeText);
+        
         // 2.reduce the life count
-        const newLife = currentLife - 1;
+        const newLife = (currentLife - 1);
+
         // 3.display the updated life
-        currentLifeElement.innertext = newLife;
+        currentLifeElement.innerText = newLife;
+        
     }
 
 }
